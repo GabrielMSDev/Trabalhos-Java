@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="348.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trabalho_times.FXMLDocumentController">
+    <children>
+        <Button fx:id="carregar" layoutX="284.0" layoutY="302.0" onAction="#handleButtonAction" text="Carregar" />
+      <TextField fx:id="n_Jogos" layoutX="121.0" layoutY="14.0" />
+      <Label layoutX="21.0" layoutY="18.0" text="Numero de Jogos" />
+      <Label layoutX="21.0" layoutY="48.0" text="Equipe" />
+      <TextField fx:id="equipe" layoutX="69.0" layoutY="44.0" />
+      <TextField fx:id="pontos" layoutX="86.0" layoutY="75.0" />
+      <Label layoutX="21.0" layoutY="79.0" text="Pontuação" />
+      <Label layoutX="21.0" layoutY="112.0" text="Numero de Vitórias" />
+      <TextField fx:id="n_Vit" layoutX="135.0" layoutY="108.0" />
+      <Label layoutX="17.0" layoutY="140.0" text="Numero de Derrotas" />
+      <TextField fx:id="n_Der" layoutX="135.0" layoutY="136.0" />
+      <Label layoutX="19.0" layoutY="171.0" text="Numero de Empates" />
+      <TextField fx:id="n_Emp" layoutX="135.0" layoutY="167.0" />
+      <Label layoutX="19.0" layoutY="203.0" text="Gols Contra" />
+      <TextField fx:id="gol_Contra" layoutX="86.0" layoutY="199.0" />
+      <Label layoutX="20.0" layoutY="236.0" text="Gols a Favor" />
+      <TextField fx:id="gol_Favor" layoutX="95.0" layoutY="232.0" />
+      <TextArea fx:id="apresentacao" layoutX="319.0" layoutY="12.0" prefHeight="250.0" prefWidth="317.0" />
+      <Label layoutX="14.0" layoutY="306.0" text="Maior Ataque" />
+      <Label layoutX="14.0" layoutY="278.0" text="Maior Vitórias" />
+      <Label layoutX="368.0" layoutY="278.0" text="Maior Defesa" />
+      <Label layoutX="368.0" layoutY="306.0" text="Maior Aproveitamento" />
+      <Label fx:id="m_vit" layoutX="101.0" layoutY="278.0" onMouseClicked="#handleButtonAction" prefHeight="17.0" prefWidth="149.0" text="0" />
+      <Label fx:id="m_atk" layoutX="100.0" layoutY="306.0" onMouseClicked="#handleButtonAction" prefHeight="17.0" prefWidth="149.0" text="0" />
+      <Label fx:id="m_def" layoutX="447.0" layoutY="278.0" onMouseClicked="#handleButtonAction" prefHeight="17.0" prefWidth="149.0" text="0" />
+      <Label fx:id="m_aproveitamento" layoutX="501.0" layoutY="306.0" onMouseClicked="#handleButtonAction" prefHeight="17.0" prefWidth="140.0" text="0" />
+    </children>
+</AnchorPane>
